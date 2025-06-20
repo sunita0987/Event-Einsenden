@@ -45,7 +45,7 @@ const ImageUpload = () => {
             <div className="absolute inset-0 bg-black bg-opacity-60 flex flex-col items-center justify-center text-white text-sm">
               <span className="ff-open sans">Hochladen...</span>
               <div className="w-4/5 h-1 bg-gray-300 mt-2 rounded-full overflow-hidden">
-                <div className="bg-green-500 w-3/5 h-full animate-pulse"></div>
+                <div className="bg-[#22C55E] w-3/5 h-full animate-pulse"></div>
               </div>
             </div>
           )}
