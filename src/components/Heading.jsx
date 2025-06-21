@@ -87,7 +87,7 @@ const Heading = () => {
                     <button
                       type="button"
                       onClick={() => handleRemoveImage(index)}
-                      className="absolute top-[2px] right-[-8px] bg-[#22C55E] w-3 h-3 animate-pulse text-white rounded-full  flex items-center justify-center text-sm hover:bg-red-700 transition-all"
+                      className="absolute top-[2px] right-[-8px] bg-[#22C55E] w-3 h-3 animate-pulse text-white rounded-full  flex items-center justify-center text-sm hover:bg-green-500 transition-all"
                     >
                       -
                     </button>
