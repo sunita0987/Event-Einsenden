@@ -1,7 +1,7 @@
 import React, { useState, useRef, useEffect } from "react";
 import Input from "../common/Input";
 
-const Event = () => {
+const Heading = () => {
   const inputValue = {
     kategorie: "",
     titel: "",
@@ -110,9 +110,9 @@ const Event = () => {
                 className="block appearance-none font-bold text-sm leading-[150%] text-[#737376] w-full py-[17.5px] bg-white px-[16px] border-[#D1E0E9] border rounded-[30px] focus:outline-none focus:ring-2 "
               >
                 <option value="">Kategorie</option>
-                <option value="option1">Option One</option>
-                <option value="option2">Option Two</option>
-                <option value="option3">Option Three</option>
+                <option value="1">ONE</option>
+                <option value="2"> Two</option>
+                <option value="3"> Three</option>
               </select>
               <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center pr-4">
               </div>
@@ -172,4 +172,4 @@ const Event = () => {
   );
 };
 
-export default Event;
+export default Heading;
