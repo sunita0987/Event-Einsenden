@@ -7,11 +7,11 @@ export default function AlphabetFilter({ selectedLetter }) {
   const navigate = useNavigate();
 
   return (
-    <div className="flex flex-wrap space-x-2 mt-4">
+    <div className="flex flex-wrap  space-x-2 mt-10 ">
       {letters.map((l) => (
         <button
           key={l}
-          className={`px-2 ${selectedLetter === l ? 'text-black font-bold ' : 'text-gray-500'}`}
+          className={`px-2 ${selectedLetter === l ? 'text-black font-bold border-2 rounded-full ' : 'text-gray-500'}`}
           onClick={() => navigate(`/${genre}/${l}`)}
         >
           {l}

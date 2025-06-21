@@ -1,24 +1,3 @@
-// import React from "react";
-
-// function Game() {
-//   return (
-//     <div className="bg-[#070D37] min-h-screen">
-//       <div className=" text-white text-5xl ml-20">
-//         <h1 classname=" font-Regular">
-//           Your world is the game
-//           <br /> board, and your mind <br />
-//           is at stake.
-//         </h1>
-//       </div>
-//       <p className=" text-[#FFFFFF] w-[350px] mt-10  ml-20 ff-open sans">
-//         At the heart of Ingress is a desire to bring people together through
-//         exploration and teamwork.
-//       </p>
-//     </div>
-//   );
-// }
-// export default Game;
-
 import React, { useState } from "react";
 const slides = [
   {
@@ -68,22 +47,10 @@ const ImageSlider = () => {
             <button onClick={prevSlide}>&larr;</button>
             <button onClick={nextSlide}>&rarr;</button>
           </div>
-          {/* <div className="absolute top-0 right-[-120px] space-y-4 hidden md:block">
-            {slides.map((slide, index) => (
-              <img
-                key={slide.id}
-                src={slide.src}
-                alt={`thumb-${index}`}
-                className={`w-20 h-20 object-cover rounded-md border ${
-                  current === index ? "border-white" : "border-transparent"
-                }`}
-                onClick={() => setCurrent(index)}
-              />
-            ))}
-          </div> */}
         </div>
       </div>
     </div>
   );
 };
 export default ImageSlider;
+
