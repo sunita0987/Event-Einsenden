@@ -4,7 +4,7 @@ import "./App.css";
 import Heading from "./components/Heading";
 import Game from "./components/Game";
 import { Routes, Route } from "react-router-dom";
-import SongsPage from "./Pages/SongPage";
+import SongsPage from "./Pages/SongsPage";
 
 function App() {
   return (
