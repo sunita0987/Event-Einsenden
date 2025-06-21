@@ -54,15 +54,17 @@ const Heading = () => {
 
   return (
     <>
-      <div className="pt-[60px] min-h-screen bg-[#F5F9FC]">
+      <div className=" min-h-screen bg-[#F5F9FC]">
         <div className="max-w-[768px] mx-auto px-3">
           <h1 className="font-bold text-4xl leading-[44px] tracking-[-2%] text-center">
             Event einsenden
           </h1>
-          <p className="font-light text-[20px] leading-[30px] max-w-[768px] text-center mx-auto pt-[20px] text-[#737376]">
+          <p className="font-light text-[20px] leading-[30px] w-[700px] text-center mx-auto pt-[20px] text-[#737376]">
             At vero eos et accusam et justo duo dolores et ea rebum. Stet clita
             kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit
-            amet.
+            amet.At vero eos et accusam et justo duo dolores et ea rebum. Stet
+            clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor
+            sit amet.
           </p>
           <form onSubmit={submitData}>
             <div className="w-full max-w-[620px] mt-[20px] md:max-w-[763px] px-4 py-2 bg-white border-2 border-dashed border-[#D1E0E9] rounded-[30px]">
@@ -114,8 +116,7 @@ const Heading = () => {
                 <option value="2"> Two</option>
                 <option value="3"> Three</option>
               </select>
-              <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center pr-4">
-              </div>
+              <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center pr-4"></div>
             </div>
             <div className="mt-[20px] flex gap-3 max-w-[763px] w-full">
               <Input
