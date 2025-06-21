@@ -31,7 +31,6 @@ const ImageUpload = () => {
   };
   const simulateUpload = (newImages, updatedImages) => {
     setUploading(true);
-    
     setTimeout(() => {
       const finalImages = updatedImages.map((img) => ({
         ...img,
@@ -65,7 +64,7 @@ const ImageUpload = () => {
         </div>
       ))}
       <label className="w-20 h-20 rounded-xl border-2 border-dashed border-gray-300 flex items-center justify-center cursor-pointer">
-        <span className="text-2xl text-blue-500">+</span>
+        <span className="text-2xl text-blue-500 cursor-pointer">+</span>
         <input
           type="file"
           accept="image/*"

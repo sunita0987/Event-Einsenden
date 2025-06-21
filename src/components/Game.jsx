@@ -40,7 +40,7 @@ const ImageSlider = () => {
   const nextSlide = () => {
     setCurrent((prev) => (prev === slides.length - 1 ? 0 : prev + 1));
   };
-
+  
   const prevSlide = () => {
     setCurrent((prev) => (prev === 0 ? slides.length - 1 : prev - 1));
   };
@@ -68,7 +68,6 @@ const ImageSlider = () => {
             <button onClick={prevSlide}>&larr;</button>
             <button onClick={nextSlide}>&rarr;</button>
           </div>
-          
           {/* <div className="absolute top-0 right-[-120px] space-y-4 hidden md:block">
             {slides.map((slide, index) => (
               <img

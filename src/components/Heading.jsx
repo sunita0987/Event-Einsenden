@@ -58,7 +58,7 @@ function Heading() {
       <div className="flex justify-center items-center bg-[#F5F9FC] ">
         <button
           onClick={() => navigate("/submit-event")}
-          className="bg-gradient-to-r from-blue-700 to-blue-400 text-white font-semibold py-3 px-8 rounded-full text-lg shadow-lg hover:opacity-90 cursor-pointer mt-5"
+          className="bg-gradient-to-r from-blue-700 to-blue-400 text-white font-semibold py-3 px-5 rounded-4xl text-lg shadow-lg hover:opacity-90 cursor-pointer mt-5"
         >
           Event einsenden
         </button>
@@ -66,4 +66,5 @@ function Heading() {
     </div>
   );
 }
+
 export default Heading;
