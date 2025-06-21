@@ -51,9 +51,18 @@ function Heading() {
           placeholder="Details zur Veranstaltung"
         />
       </form>
-      <button className=" bg-[#0071BB] px-5 py-3 rounded-4xl w-[400px] text-white font-bold ff-open sans ml-100 mt-5 cursor-pointer">
+      {/* <button className=" bg-[#0071BB] px-5 py-3 rounded-4xl w-[400px] text-white font-bold ff-open sans ml-100 mt-5 cursor-pointer">
         Event einsenden
-      </button>
+      </button> */}
+
+      <div className="flex justify-center items-center bg-[#F5F9FC] ">
+        <button
+          onClick={() => navigate("/submit-event")}
+          className="bg-gradient-to-r from-blue-700 to-blue-400 text-white font-semibold py-3 px-8 rounded-full text-lg shadow-lg hover:opacity-90 cursor-pointer mt-5"
+        >
+          Event einsenden
+        </button>
+      </div>
     </div>
   );
 }

@@ -1,7 +1,17 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
+
 const ImageUpload = () => {
   const [images, setImages] = useState([]);
   const [uploading, setUploading] = useState(false);
+  useEffect(() => {
+    const storedImages = localStorage.getItem("uploadedImages");
+    if (storedImages) {
+      setImages(JSON.parse(storedImages));
+    }
+  }, []);
+  const saveToLocalStorage = (imagesToSave) => {
+    localStorage.setItem("uploadedImages", JSON.stringify(imagesToSave));
+  };
   const handleImageUpload = (event) => {
     const files = Array.from(event.target.files);
     const fileReaders = files.map((file) => {
@@ -14,18 +24,21 @@ const ImageUpload = () => {
       });
     });
     Promise.all(fileReaders).then((newImages) => {
-      setImages((prev) => [...prev, ...newImages]);
-      simulateUpload(newImages);
+      const updated = [...images, ...newImages];
+      setImages(updated);
+      simulateUpload(newImages, updated);
     });
   };
-  const simulateUpload = (newImages) => {
+  const simulateUpload = (newImages, updatedImages) => {
     setUploading(true);
+    
     setTimeout(() => {
-      const updatedImages = images.concat(newImages).map((img) => ({
+      const finalImages = updatedImages.map((img) => ({
         ...img,
         uploading: false,
       }));
-      setImages(updatedImages);
+      setImages(finalImages);
+      saveToLocalStorage(finalImages);
       setUploading(false);
     }, 2000);
   };
@@ -51,7 +64,6 @@ const ImageUpload = () => {
           )}
         </div>
       ))}
-
       <label className="w-20 h-20 rounded-xl border-2 border-dashed border-gray-300 flex items-center justify-center cursor-pointer">
         <span className="text-2xl text-blue-500">+</span>
         <input
@@ -61,7 +73,7 @@ const ImageUpload = () => {
           className="hidden"
           onChange={handleImageUpload}
         />
-      </label>
+        </label>
     </div>
   );
 };
