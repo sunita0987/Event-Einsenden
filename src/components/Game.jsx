@@ -19,7 +19,7 @@ const ImageSlider = () => {
   const nextSlide = () => {
     setCurrent((prev) => (prev === slides.length - 1 ? 0 : prev + 1));
   };
-  
+
   const prevSlide = () => {
     setCurrent((prev) => (prev === 0 ? slides.length - 1 : prev - 1));
   };
@@ -27,10 +27,10 @@ const ImageSlider = () => {
     <div className="flex justify-center items-center bg-[#0a0a23] min-h-screen text-white px-4">
       <div className="max-w-6xl w-full grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
         <div>
-          <h1 className="text-5xl font-bold mb-49 ff-open sans w-[530px]  font-regular">
+          <h1 className="text-5xl font-bold ff-Oswald w-[530px] font-regular">
             Your world is the game board, and your mind is at stake.
           </h1>
-          <p className="mb-40 w-[400px]">
+          <p className=" w-[400px] mt-10 ff-Open Sans">
             At the heart of Ingress is a desire to bring people together through
             exploration and teamwork.
           </p>
@@ -53,4 +53,3 @@ const ImageSlider = () => {
   );
 };
 export default ImageSlider;
-

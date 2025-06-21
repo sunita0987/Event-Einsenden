@@ -12,7 +12,7 @@ export default function GenreFilter({ selectedGenre }) {
           key={g}
           className={`px-4 py-2 border rounded-full ${
             selectedGenre === g
-              ? "bg-black text-white rounded-2xl"
+              ? "bg-black text-white rounded-2xl  ff-Poppins"
               : "bg-white cursor-pointer"
           }`}
           onClick={() => navigate(`/${g}/A`)}

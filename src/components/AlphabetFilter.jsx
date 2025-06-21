@@ -13,8 +13,8 @@ export default function AlphabetFilter({ selectedLetter }) {
           key={l}
           className={`px-2 ${
             selectedLetter === l
-              ? " font-bold border-2 rounded-full bg-black text-white"
-              : "text-black cursor-pointer"
+              ? " font-bold border-2 rounded-full bg-black text-white ff-Poppins"
+              : "text-black cursor-pointer ff-Poppins"
           }`}
           onClick={() => navigate(`/${genre}/${l}`)}
         >
