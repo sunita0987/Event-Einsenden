@@ -24,7 +24,7 @@ export default function SongsPage() {
         <img
           src="../images/artist.png"
           alt="Album Cover"
-          className="w-32 h-32  rounded-lg "
+          className="w-60 h-60  rounded-lg ml-230 mt-[-300px]"
         />
       </div>
     </div>

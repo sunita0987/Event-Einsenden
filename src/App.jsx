@@ -13,8 +13,8 @@ function App() {
       <Game />
 
       <Routes>
-        <Route path="/:genre/:letter" element={<SongsPage />} />
         <Route path="/" element={<SongsPage />} />
+        <Route path="/:genre/:letter" element={<SongsPage />} />
       </Routes>
     </>
   );
