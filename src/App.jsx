@@ -11,7 +11,6 @@ function App() {
     <>
       <Heading />
       <Game />
-
       <Routes>
         <Route path="/" element={<SongsPage />} />
         <Route path="/:genre/:letter" element={<SongsPage />} />
