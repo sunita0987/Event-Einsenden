@@ -76,7 +76,7 @@ const Heading = () => {
                 ref={fileInputRef}
                 className="hidden"
               />
-              <div className="gap-4 flex overflow-auto">
+              <div className="gap-4 flex overflow-auto shrink-0 min-w-full">
                 {ImgPreview.map((imgSrc, index) => (
                   <div key={index} className="relative">
                     <img
